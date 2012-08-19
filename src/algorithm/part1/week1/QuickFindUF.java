@@ -1,7 +1,6 @@
 package algorithm.part1.week1;
 
-
-public class QuickFindUF {
+public class QuickFindUF implements UnionFind {
 
    private int[] id;
 
@@ -11,6 +10,10 @@ public class QuickFindUF {
          id[i] = i;
    }
 
+   /* (non-Javadoc)
+    * @see algorithm.part1.week1.UnionFind#union(int, int)
+    */
+   @Override
    public void union(int first, int second) {
       int firstValue = id[first];
       int secondValue = id[second];
@@ -22,6 +25,10 @@ public class QuickFindUF {
       }
    }
 
+   /* (non-Javadoc)
+    * @see algorithm.part1.week1.UnionFind#connected(int, int)
+    */
+   @Override
    public boolean connected(int first, int second) {
       return id[first] == id[second];
    }

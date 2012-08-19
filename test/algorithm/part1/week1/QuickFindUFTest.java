@@ -7,7 +7,7 @@ public class QuickFindUFTest {
 
    @Test
    public void shouldBeReflexive() {
-      QuickFindUF quickFindUF = new QuickFindUF(4);
+      UnionFind quickFindUF = new QuickFindUF(4);
       
       assertTrue(quickFindUF.connected(0,0));
       assertTrue(quickFindUF.connected(1,1));
@@ -17,7 +17,7 @@ public class QuickFindUFTest {
    
    @Test
    public void shouldBeSymetric() {
-      QuickFindUF quickFindUF = new QuickFindUF(10);
+      UnionFind quickFindUF = new QuickFindUF(10);
       
       quickFindUF.union(0,7);
       quickFindUF.union(1,9);
@@ -37,7 +37,7 @@ public class QuickFindUFTest {
    
    @Test
    public void shouldBeTransitie() {
-      QuickFindUF quickFindUF = new QuickFindUF(10);
+      UnionFind quickFindUF = new QuickFindUF(10);
       
       quickFindUF.union(0,7);
       quickFindUF.union(1,9);
