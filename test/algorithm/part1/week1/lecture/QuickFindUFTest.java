@@ -1,6 +1,9 @@
-package algorithm.part1.week1;
+package algorithm.part1.week1.lecture;
 
 import org.junit.Test;
+
+import algorithm.part1.week1.lecture.QuickFindUF;
+import algorithm.part1.week1.lecture.UnionFind;
 import static org.junit.Assert.*;
 
 public class QuickFindUFTest {

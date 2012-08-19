@@ -1,4 +1,4 @@
-package algorithm.part1.week1;
+package algorithm.part1.week1.lecture;
 
 public class QuickUnionUF implements UnionFind {
 

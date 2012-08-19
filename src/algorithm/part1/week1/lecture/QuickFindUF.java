@@ -1,4 +1,4 @@
-package algorithm.part1.week1;
+package algorithm.part1.week1.lecture;
 
 public class QuickFindUF implements UnionFind {
 
@@ -31,6 +31,11 @@ public class QuickFindUF implements UnionFind {
    @Override
    public boolean connected(int first, int second) {
       return id[first] == id[second];
+   }
+
+   public int[] getIds()
+   {
+      return id.clone();
    }
 
 }

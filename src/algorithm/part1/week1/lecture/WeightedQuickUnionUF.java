@@ -1,4 +1,4 @@
-package algorithm.part1.week1;
+package algorithm.part1.week1.lecture;
 
 public class WeightedQuickUnionUF implements UnionFind {
    private int[] id;
@@ -42,6 +42,11 @@ public class WeightedQuickUnionUF implements UnionFind {
          i = id[i];
       }
       return i;
+   }
+
+   public int[] getIds()
+   {
+      return id.clone();
    }
 
 }

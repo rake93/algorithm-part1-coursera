@@ -1,15 +1,16 @@
-package algorithm.part1.week1;
+package algorithm.part1.week1.lecture;
 
 import org.junit.Test;
+
+import algorithm.part1.week1.lecture.QuickUnionUF;
+import algorithm.part1.week1.lecture.UnionFind;
 import static org.junit.Assert.*;
 
-public class WeightedQuickUnionUFTest {
+public class QuickUnionUFTest {
 
-   
-   //TODO: improve tests
    @Test
    public void shouldBeReflexive() {
-      UnionFind quickFindUF = new WeightedQuickUnionUF(4);
+      UnionFind quickFindUF = new QuickUnionUF(4);
       
       assertTrue(quickFindUF.connected(0,0));
       assertTrue(quickFindUF.connected(1,1));
@@ -19,7 +20,7 @@ public class WeightedQuickUnionUFTest {
    
    @Test
    public void shouldBeSymetric() {
-      UnionFind quickFindUF = new WeightedQuickUnionUF(10);
+      UnionFind quickFindUF = new QuickUnionUF(10);
       
       quickFindUF.union(0,7);
       quickFindUF.union(1,9);
@@ -39,7 +40,7 @@ public class WeightedQuickUnionUFTest {
    
    @Test
    public void shouldBeTransitie() {
-      UnionFind quickFindUF = new WeightedQuickUnionUF(10);
+      UnionFind quickFindUF = new QuickUnionUF(10);
       
       quickFindUF.union(0,7);
       quickFindUF.union(1,9);
