@@ -36,7 +36,11 @@ public class WeightedQuickUnionUF implements UnionFind {
    
    private int root(int value) {
       int i = value;
-      while(i != id[i]) i = id[i];
+      while(i != id[i]) {
+         // this line is a way of compression the tree
+         id[i] = id[id[i]];
+         i = id[i];
+      }
       return i;
    }
 
